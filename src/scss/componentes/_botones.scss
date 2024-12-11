@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.campo-boton {
+    display: flex;
+    flex-direction: column;
+    
+    .boton {
+        border-radius: 1rem;
+        margin-bottom: 0;
+    }
+}
+
+.boton {
+    @include m.boton(v.$azul, v.$blanco);
+}
+
+
+.boton-eliminar {
+    @include m.boton(v.$rojo, v.$blanco);
+}

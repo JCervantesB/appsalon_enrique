@@ -1,0 +1,25 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.alerta {
+    padding: calc(v.$separacion/4);
+    // background-color: #f44336;
+    // color: v.$blanco;
+    display: block;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: v.$bold;
+
+    &.error {
+        background-color: v.$rojo;
+    }
+
+    &.exito  {
+        background-color: v.$verde;
+    }
+    &.sin-citas  {
+        background-color: v.$naranja;
+    }
+}
